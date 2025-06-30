@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Tienda Oshin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="img/OSHIN.png" alt="Tienda Oshin" /></a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#productos-destacados">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contacto-pagina">
+    <section class="contacto-formulario">
+      <h1>Contáctanos</h1>
+      <p>¿Tienes dudas, sugerencias o comentarios? ¡Escríbenos!</p>
+
+      <form id="form-contacto">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="correo" placeholder="Tu correo electrónico" required />
+        <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+
+      <a href="index.html" class="boton-volver">← Volver al inicio</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Tienda Oshin. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('form-contacto').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('¡Gracias por tu mensaje! Nos pondremos en contacto pronto.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
