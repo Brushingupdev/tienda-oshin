@@ -357,7 +357,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* Estilo para cada producto en el carrito */
+
 .item-carrito {
   display: flex;
   align-items: center;
@@ -412,7 +412,7 @@ body {
   color: #000;
 }
 
-/* Botón de vaciar carrito */
+
 #vaciar-carrito {
   background-color: #333;
   color: white;
@@ -540,4 +540,36 @@ html {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nosotros-info {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .producto-card {
+    max-width: 90%;
+  }
+
+  .carrito-pagina {
+    padding: 30px 15px;
+  }
+
+  .item-carrito {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-controles {
+    padding: 0 10px;
+  }
 }
