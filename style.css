@@ -11,6 +11,7 @@ body {
   color: #000;
 }
 
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -30,6 +31,7 @@ body {
   display: flex;
   gap: 40px;
   font-size: 30px;
+
 
 }
 
@@ -129,7 +131,7 @@ body {
 
 .cards {
   display: flex;
-  gap: 150px;
+  gap: 50px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -434,6 +436,7 @@ body {
   color: #000;
 }
 
+
 #vaciar-carrito {
   background-color: #333;
   color: white;
@@ -598,6 +601,7 @@ html {
   height: 24px;
 }
 
+
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
@@ -623,3 +627,4 @@ html {
     font-size: 1rem;
   }
 }
+
