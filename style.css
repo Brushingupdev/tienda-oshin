@@ -171,9 +171,34 @@ body {
   margin-bottom: 8px;
 }
 
+.card h3 a {
+  color: #000;
+  text-decoration: none; 
+  transition: color 0.3s ease;
+}
+
+.card h3 a:hover {
+  color: #888; 
+}
+
 .card p {
   color: #666;
   font-size: 0.95rem;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.card-link .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-link:hover .card {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .beneficios {
@@ -520,6 +545,12 @@ html {
 
 .contacto-formulario button:hover {
   background-color: #333;
+}
+
+.boton-cta,
+.boton-agregar,
+.boton-volver {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .boton-volver {
